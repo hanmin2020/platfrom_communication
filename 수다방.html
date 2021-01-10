@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+  <title>수다방</title>
+  <meta charset="utf-8">
+  <style>
+    body{
+      margin:0;
+    }
+    #active {
+      color:gray;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    h1 {
+      font-size:45px;
+      text-align: center;
+      margin:0;
+      padding:20px;
+    }
+    h3{
+      font-size:20px;
+      text-align: right;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding-bottom:40px;
+    }
+    h6{
+      font-size:30px;
+      margin:0;
+      padding:0;
+    }
+    h2{
+      margin:0;
+      padding:0;
+      padding-top: 20px;
+    }
+    ol{
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:20px;
+      padding-left: 30px;
+    }
+    ol{
+      background-color: darkgray;
+      color: white;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid #article{
+     padding-left:25px;
+   }
+  </style>
+</head>
+<body>
+  <img src="hanmin.png" height="150" >
+  <h1><a href="index.html">한민고 소통 플랫폼</a></h1>
+  <h3>2020 학술제 강다인 팀 제작</h3>
+<div id="grid">
+  <ol>
+    <li id="active"><a href="수다방.html" id="active">수다방 </a></li>
+    <li><a href="문제점 건의.html" style="color:white">문제점 건의</a></li>
+    <li><a href="문제점 1.html" style="color:white">문제점 ⑴ </a></li>
+    <li><a href="문제점 2.html" style="color:white">문제점 ⑵</a></li>
+  </ol>
+  <div id="article">
+    <h2>▷ 수다방</h2>
+    <p><b>
+      이곳은 플랫폼 이용자끼리 다양한 주제를 설정하여 자유롭게 대화할 수 있는 수다방입니다.
+      <br>아래의 댓글을 통해 자유롭게 대화해 보세요!
+      <br>※ 익명성 보장을 위해 DISQUS 홈페이지에서 익명성이 보장되는 닉네임으로 회원가입하여 로그인 후 댓글을 적어주세요.
+    </b></p>
+  </div>
+  <p id="article">
+  <div id="disqus_thread"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://munjejeom-1.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </p>
+</div>
+
+  </body>
+  </html>
